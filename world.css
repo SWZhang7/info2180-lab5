@@ -1,2 +1,73 @@
-/* Add your own styles */
+/* Overall page */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+}
 
+/* Header bar like the mockup */
+header {
+    background-color: #3c4352;
+    color: #fff;
+    padding: 25px 0;
+    text-align: center;
+}
+
+/* Controls area (search + buttons) */
+#controls {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#country {
+    width: 70%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#lookup {
+    margin-left: 8px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 3px;
+    background-color: #2ab27b;
+    color: #fff;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+#lookup:hover {
+    opacity: 0.9;
+}
+
+/* Result area */
+#result {
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+/* Table styling */
+#countries {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+    font-size: 14px;
+}
+
+#countries thead {
+    background-color: #f7f7f7;
+}
+
+#countries th,
+#countries td {
+    padding: 10px 12px;
+    border: 1px solid #e5e5e5;
+    text-align: left;
+}
+
+#countries tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
