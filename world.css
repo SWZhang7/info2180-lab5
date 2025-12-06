@@ -1,11 +1,11 @@
-/* Overall page */
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f5f7fa;
 }
 
-/* Header bar like the mockup */
+
 header {
     background-color: #3c4352;
     color: #fff;
@@ -13,61 +13,78 @@ header {
     text-align: center;
 }
 
-/* Controls area (search + buttons) */
+
 #controls {
     max-width: 600px;
     margin: 20px auto;
     text-align: center;
 }
 
+
 #country {
-    width: 70%;
-    padding: 8px 10px;
+    width: 80%;
+    padding: 10px 12px;
+    margin-bottom: 12px;  
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 4px;
 }
 
-#lookup {
-    margin-left: 8px;
-    padding: 8px 14px;
+
+#lookup, 
+#lookup-cities {
+    padding: 10px 16px;
+    margin: 5px;
     border: none;
-    border-radius: 3px;
+    border-radius: 4px;
     background-color: #2ab27b;
-    color: #fff;
+    color: white;
     cursor: pointer;
-    font-size: 13px;
+    font-size: 14px;
 }
 
-#lookup:hover {
+
+#lookup-cities {
+    background-color: #3498db;
+}
+
+#lookup:hover,
+#lookup-cities:hover {
     opacity: 0.9;
 }
 
-/* Result area */
+
 #result {
     max-width: 800px;
-    margin: 0 auto 40px;
+    margin: 30px auto 60px;
 }
 
-/* Table styling */
-#countries {
+
+
+
+#result table {
     width: 100%;
     border-collapse: collapse;
     background-color: #fff;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
-    font-size: 14px;
+    font-size: 15px;
+    margin-top: 20px;
 }
 
-#countries thead {
+#result thead {
     background-color: #f7f7f7;
 }
 
-#countries th,
-#countries td {
-    padding: 10px 12px;
-    border: 1px solid #e5e5e5;
+#result th,
+#result td {
+    padding: 12px 14px;
+    border: 1px solid #e0e0e0;
     text-align: left;
 }
 
-#countries tbody tr:nth-child(even) {
+#result tbody tr:nth-child(even) {
     background-color: #fafafa;
+}
+
+#result tbody tr:hover {
+    background-color: #eef5ff;
 }
